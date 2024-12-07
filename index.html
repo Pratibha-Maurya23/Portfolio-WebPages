@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS FIle -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
+    <!-- Cursur anumation -->
+    <div class="cursor"></div>
     <!-- =====Header start ===== -->
     <header>
       <!-- profile -->
@@ -24,13 +32,12 @@
       <nav>
         <ul>
           <li>
-            <i class="fa-solid fa-house active"></i
-            ><a href="" class="active">Home</a>
+            <a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a>
           </li>
-          <li><i class="fa-solid fa-user"></i><a href="">About Me</a></li>
-          <li><i class="fa-solid fa-briefcase"></i><a href="">Porfolio</a></li>
-          <li><i class="fa-solid fa-server"></i><a href="">Services</a></li>
-          <li><i class="fa-solid fa-envelope"></i><a href="">Contect</a></li>
+          <li><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
+          <li><a href="#portfolio"><i class="fa-solid fa-briefcase"></i>Porfolio</a></li>
+          <li><a href="#service"><i class="fa-solid fa-server"></i>Services</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contect</a></li>
         </ul>
       </nav>
       <!-- Footer -->
@@ -44,7 +51,7 @@
       </div>
     </header>
     <!-- Mobile Nav Toggle -->
-     <i class="fa-solid fa-bars" id="MenuBtn"></i>
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
     <!-- =====Header End ===== -->
 
     <!-- ========= All Body Content ========== -->
@@ -52,83 +59,542 @@
       <!-- ==== Home Section Start ====== -->
       <section id="home">
         <div class="home-row">
-          <h1>Hi,This is <br />Pratibha Maurya<span>.</span></h1>
+          <h1>
+            <span>Hello</span>,This is <br /><span>Pratibha Maurya</span>.
+          </h1>
           <p>I'm a <span class="auto-input"></span></p>
         </div>
       </section>
       <!-- ==== Home Section END ====== -->
 
-
-
-
-
       <!-- ==== About Section START ==== -->
-       <section id="about">
-
+      <section id="about">
         <h1 class="sub-heading">About Me</h1>
         <div class="divider"></div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex sequi eaque debitis, voluptatum commodi nisi expedita temporibus veniam! Eveniet fugiat corrupti, quidem facilis, repellat nisi iusto, et quae pariatur itaque natus autem sed dolor! Animi eligendi velit accusamus, maiores a debitis natus distinctio autem incidunt odio beatae. Ex, molestiae provident.</p>
-        
-        <div class="about-col">
+        <p class="sub-para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex sequi
+          eaque debitis, voluptatum commodi nisi expedita temporibus veniam!
+          Eveniet fugiat corrupti, quidem facilis, repellat nisi iusto, et quae
+          pariatur itaque natus autem sed dolor! Animi eligendi velit accusamus,
+          maiores a debitis natus distinctio autem incidunt odio beatae. Ex,
+          molestiae provident.
+        </p>
 
-         <!-- img-col -->
+        <div class="about-col">
+          <!-- img-col -->
           <div class="img-col">
-            <img src="img/profile-img.jpg" alt="...">
+            <img src="img/profile-img.jpg" alt="..." />
           </div>
 
           <!-- information  -->
-           <div class="info-col">
+          <div class="info-col">
             <h2>Front-End Developer!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, tempore alias fugiat molestiae perferendis sit!</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, tempore alias fugiat molestiae perferendis sit!
+            </p>
 
             <div class="icon-list-col">
-
-
-            <!-- left-Side list -->
-             <div class="icon-list">
-              <ul>
-                <li><i class="fa-solid fa-angle-right"></i> <strong>DOB:</strong> <span>19 Dec 2003</span></li>
-                <li><i class="fa-solid fa-angle-right"></i> <strong>Webside:</strong> <span>www.Pratibha.xyz</span></li>
-                <li><i class="fa-solid fa-angle-right"></i> <strong>Phone:</strong> <span>+91 xxxxxxx488</span></li>
-                <li><i class="fa-solid fa-angle-right"></i> <strong>City:</strong> <span>Ghaziabad,Uttar Pradesh</span></li>
-              </ul>
-             </div>
+              <!-- left-Side list -->
+              <div class="icon-list">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>DOB:</strong> <span>19 Dec 2003</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Webside:</strong> <span>www.Pratibha.xyz</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Phone:</strong> <span>+91 xxxxxxx488</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>City:</strong> <span>Ghaziabad,Uttar Pradesh</span>
+                  </li>
+                </ul>
+              </div>
 
               <!-- Right-Side list -->
               <div class="icon-list">
                 <ul>
-                  <li><i class="fa-solid fa-angle-right"></i> <strong>Age:</strong> <span>20</span></li>
-                  <li><i class="fa-solid fa-angle-right"></i> <strong>Degree:</strong> <span>B.tech</span></li>
-                  <li><i class="fa-solid fa-angle-right"></i> <strong>Email:</strong> <span>xxxx@gmail.com</span></li>
-                  <li><i class="fa-solid fa-angle-right"></i> <strong>Freelance:</strong> <span>Availabel</span></li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Age:</strong> <span>20</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Degree:</strong> <span>B.tech</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Email:</strong> <span>xxxx@gmail.com</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <strong>Freelance:</strong> <span>Availabel</span>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========== About Section END ========= -->
+      <!-- ------------------------------------------------------- -->
+
+      <!-- ===== Facts Section Start === -->
+      <section id="facts">
+        <h1 class="sub-heading">Facts</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem, quae. Sequi earum accusantium pariatur, autem beatae
+          quibusdam in aliquid tempora delectus nesciunt maiores blanditiis illo
+          nam provident deleniti eos quaerat. Laudantium fuga, vel iste
+          consequuntur necessitatibus distinctio adipisci ea sit quasi libero
+          enim cumque hic dignissimos facere quo corrupti. Tenetur.
+        </p>
+
+        <div class="facts-row">
+          <!-- Facts-Box-1 -->
+          <div class="fact-box">
+            <i class="fa-regular fa-face-smile"></i>
+            <strong>50+</strong>
+            <p>Happy Clients</p>
+          </div>
+
+          <!-- Facts-Box-2 -->
+          <div class="fact-box">
+            <i class="fa-regular fa-file-code"></i>
+            <strong>60+</strong>
+            <p>Projects Completed</p>
+          </div>
+
+          <!-- Facts-Box-3 -->
+          <div class="fact-box">
+            <i class="fa-solid fa-headset"></i>
+            <strong>24/7</strong>
+            <p>Hours of Support</p>
+          </div>
+
+          <!-- Facts-Box-4 -->
+          <div class="fact-box">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <strong>10+</strong>
+            <p>Pending Projects</p>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Facts Section END === -->
+      <!-- ------------------------------------------------------ -->
+
+      <!-- =========  SKill Section START ======= -->
+      <section id="skill">
+        <h1 class="sub-heading">skills</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ut
+          perferendis impedit minima accusamus a deleniti nobis aliquid aliquam
+          facere! Earum inventore quos asperiores assumenda voluptatem
+          voluptatum, natus corporis quibusdam at eius quod. Aspernatur,
+          perspiciatis vel dignissimos, quidem sint alias, dolor repellendus
+          tempora iusto voluptas aut doloremque eos! Ea, animi.
+        </p>
+
+        <div class="skill-row">
+          <!-- Skill 1 -->
+          <div class="skill-box">
+            <div class="skill-info">
+              <h2>HTML</h2>
+              <h2>85%</h2>
+            </div>
+            <div class="skill-outer-line">
+              <div class="skill-inner-line" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="skill-box">
+            <div class="skill-info">
+              <h2>CSS</h2>
+              <h2>75%%</h2>
+            </div>
+            <div class="skill-outer-line">
+              <div class="skill-inner-line" style="width: 75%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="skill-box">
+            <div class="skill-info">
+              <h2>JavaScript</h2>
+              <h2>60%</h2>
+            </div>
+            <div class="skill-outer-line">
+              <div class="skill-inner-line" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="skill-box">
+            <div class="skill-info">
+              <h2>Web Designing</h2>
+              <h2>70%</h2>
+            </div>
+            <div class="skill-outer-line">
+              <div class="skill-inner-line" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="skill-box">
+            <div class="skill-info">
+              <h2>Bootstrap</h2>
+              <h2>55%</h2>
+            </div>
+            <div class="skill-outer-line">
+              <div class="skill-inner-line" style="width: 55%"></div>
+            </div>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="skill-box">
+            <div class="skill-info">
+              <h2>PHP</h2>
+              <h2>40%</h2>
+            </div>
+            <div class="skill-outer-line">
+              <div class="skill-inner-line" style="width: 40%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========  SKill Section END ======= -->
+
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- =============== Resume Section Start ================== -->
+      <section id="resume">
+        <h1 class="sub-heading">Resume</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque ut
+          perferendis impedit minima accusamus a deleniti nobis aliquid aliquam
+          facere! Earum inventore quos asperiores assumenda voluptatem
+          voluptatum, natus corporis quibusdam at eius quod. Aspernatur,
+          perspiciatis vel dignissimos, quidem sint alias, dolor repellendus
+          tempora iusto voluptas aut doloremque eos! Ea, animi.
+        </p>
+
+        <div class="resume-row">
+          <!-- Left cols -->
+          <div class="resume-cols">
+            <h2>Summary</h2>
+            <div class="my-info">
+              <h3>Pratibha Maurya</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                dicta sit accusamus dignissimos. Atque modi nemo nobis eveniet,
+                distinctio eum.
+              </p>
+              <ul>
+                <li>Poretland par 121,Orlando, FL</li>
+                <li>(123) 456-7891</li>
+                <li>xxxx@gmail.com</li>
+              </ul>
+            </div>
+
+            <h2>Education</h2>
+
+            <div class="my-edu">
+              <h3>B.tech in Computer Science and Engineering</h3>
+              <span class="sp-box">2015-2016</span>
+              <p>Academy of Business and Engineering Science,Ghaziabad</p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                asperiores totam quam veritatis facere repudiandae.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right cols -->
+          <div class="resume-cols">
+            <h2>Profession Experience</h2>
+
+            <div class="pro-exp">
+              <h3>JUNIOR FULL WEB DEVELOPER</h3>
+              <span class="sp-box">2024-persents</span>
+              <p>Student,ABES,Ghaziabad</p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia numquam eaque quo.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia numquam eaque quo.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia numquam eaque quo.
+                </li>
+              </ul>
+            </div>
+
+            <div class="pro-exp">
+              <h3>JUNIOR FULL WEB DEVELOPER</h3>
+              <span class="sp-box">2023-2024</span>
+              <p>Student,ABES,Ghaziabad</p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia numquam eaque quo.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia numquam eaque quo.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Officia numquam eaque quo.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =============== Resume Section End ================== -->
+
+      <!-- ------------------------------------------------------------------ -->
+
+      <!-- ======== Portfolio Section START ====== -->
+      <section id="portfolio">
+        <h1 class="sub-heading">Portfolio</h1>
+        <div class="divider"></div>
+        <p class="sub-para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          aliquid numquam minus id dolor veniam ipsa quia vel! Maiores, ipsum!
+        </p>
+
+        <div class="port-row">
+          <!-- portfolio item1 -->
+          <div class="port-item">
+            <div class="port-img">
+              <img src="img/portfolio/porfolio1.png" alt="..." />
+            </div>
+            <div class="port-info">
+              <h4>WordPress</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                deserunt!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <!-- portfolio item2 -->
+          <div class="port-item">
+            <div class="port-img">
+              <img src="img/portfolio/porfolio2.png" alt="..." />
+            </div>
+            <div class="port-info">
+              <h4>WordPress</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                deserunt!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          <!-- portfolio item3 -->
+          <div class="port-item">
+            <div class="port-img">
+              <img src="img/portfolio/portfolio3.png" alt="..." />
+            </div>
+            <div class="port-info">
+              <h4>WordPress</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
+                deserunt!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ======== Portfolio Section END ====== -->
+
+       <!-------------------------------------------------------------------- -->
+        <!-- ======== Service Section Start ====== -->
+         <section id="service">
+
+          <h1 class="sub-heading">Service</h1>
+          <div class="divider"></div>
+          <p class="sub-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            aliquid numquam minus id dolor veniam ipsa quia vel! Maiores, ipsum!
+          </p>
+
+          <div class="ser-row">
+
+            <!-- Service 1 -->
+             <div class="ser-box">
+              <div class="icon">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="ser-info">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quo laboriosam cumque modi earum accusantium?</p>
+              </div>
+             </div>
+             
+            <!-- Service 2 -->
+            <div class="ser-box">
+              <div class="icon">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="ser-info">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quo laboriosam cumque modi earum accusantium?</p>
+              </div>
+             </div>
+             
+            <!-- Service 3 -->
+            <div class="ser-box">
+              <div class="icon">
+                <i class="fa-solid fa-chart-bar"></i>
+              </div>
+              <div class="ser-info">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quo laboriosam cumque modi earum accusantium?</p>
+              </div>
+             </div>
+
+             <!-- Service 4 -->
+             <div class="ser-box">
+              <div class="icon">
+                <i class="fa-solid fa-binoculars"></i>
+              </div>
+              <div class="ser-info">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quo laboriosam cumque modi earum accusantium?</p>
+              </div>
+             </div>
+             
+            <!-- Service 5 -->
+            <div class="ser-box">
+              <div class="icon">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="ser-info">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quo laboriosam cumque modi earum accusantium?</p>
+              </div>
+             </div>
+             
+            <!-- Service 6 -->
+            <div class="ser-box">
+              <div class="icon">
+                <i class="fa-brands fa-slack"></i>
+              </div>
+              <div class="ser-info">
+                <h4>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quo laboriosam cumque modi earum accusantium?</p>
+              </div>
+             </div>
+
+
+
+          </div>
+
+         </section>
+          <!-- ======== Service Section END ====== -->
+
+<!-- ----------------------------------------------- -->
+   <!-- ======== Contect Section Sart ====== -->
+    <section id="contact">
+
+      <h1 class="sub-heading">Contact</h1>
+          <div class="divider"></div>
+          <p class="sub-para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            aliquid numquam minus id dolor veniam ipsa quia vel! Maiores, ipsum!
+          </p>
+
+          <div class="cont-row">
+
+            <!-- Left Cols -->
+            <div class="cont-left">
+
+              
+              <!-- Email Box -->
+               <div class="icon-box">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info">
+                  <h4>Email:</h4>
+                  <p>xxxx@gmail.com</p>
+                </div>
                </div>
+            
+
+            <!-- Call Box -->
+            <div class="icon-box">
+              <div class="icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="info">
+                <h4>Call:</h4>
+                <p>+91 xxxxxxx488</p>
+              </div>
+             </div>
+          
+
+           <!-- Location Box -->
+           <div class="icon-box">
+            <div class="icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="info">
+              <h4>Location:</h4>
+              <p>Ghaziabad,Uttar Pradesh</p>
             </div>
            </div>
+        
+        <!-- Maps -->
+         <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30755.035345576365!2d77.43055079053006!3d28.63425169608339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef001baabfc7%3A0x2b368709c429d9c7!2sGhaziabad!5e0!3m2!1sen!2sin!4v1733603832096!5m2!1sen!2sin" width="100%" height="250" style="border:4;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
         </div>
 
-       </section>
-    <!-- =========== About Section END ========= -->
-<!-- ------------------------------------------------------- -->
- 
+            <!-- Right Cols -->
+            <div class="cont-right">
+              <form action="">
 
-<!-- ===== Facts Section Start === -->
-<section id="facts"></section>
-
-
-
-   <!-- ===== Facts Section END === -->
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                <input type="email"name="email" id="email" placeholder="Your Email">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message">
 
 
+              </form>
+            </div>
 
+          </div>
 
-
+    </section>
+   <!-- ======== Contect Section End ====== -->
     </main>
 
-    <!-- Main JS File -->
+    <!-- Typed.JS File (for Typing Effect) -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Main Js File -->
     <script src="script.js"></script>
-   
   </body>
 </html>
